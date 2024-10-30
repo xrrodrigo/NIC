@@ -1,101 +1,67 @@
 import Image from "next/image";
+import Link from 'next/link'
+
+import Slider from './slider.js'
+import CustomVideo from './customvideo.js'
+
+
+import logo from "/public/img/logo.svg"
+import Car1 from "/public/img/car1.png"
+import Car2 from "/public/img/car2.png"
+import Car3 from "/public/img/car3.png"
+import partner from "/public/img/bauduco4.png";
+
+ 
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+    <header className="p-5 flex justify-between">
+    <Image
+      src={logo}
+      alt="NIC"
+       width={150}
+       height={150}
+      />
+      <div className="flex items-center gap-14 justify-center">
+      <Link href="#about">Quem somos</Link>
+      <Link href="/dashboard">Projetos</Link>
+      <Link href="/dashboard">Parceiros</Link>
+      <Link href="/dashboard">Transparência</Link>
+      </div>
+      <div className="flex items-center gap-10 justify-center">
+      <Link href="/dashboard" className="rounded-full flex justify-center items-center w-40 h-10 bg-buttonColor text-white">Doe aqui!</Link>
+      <Link href="/test">Entrar</Link>
+      </div>
+      </header> 
+      <main>
+<Slider></Slider>
+ 
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+ <div className="p-12 pt-36 flex justify-between">
+  <div id="about" className="pr-12">
+ <h1>Quem somos</h1>
+ <h1 className="font-black text-5xl	max-w-xl py-3.5">NIC - Núcleo de Incentivo à Cidadania</h1>
+ <p className="text-sm font-medium max-w-lg">Fundado em 2003, o NIC em Contagem, MG, é uma instituição sem fins lucrativos que promove atendimento social, cultural e educacional. A missão é garantir acesso às políticas públicas de proteção. O objetivo é melhorar a qualidade de vida e facilitar o acesso às políticas públicas. As atividades atendem crianças, adolescentes, jovens, idosos, mulheres e famílias da região do Ressaca, além de prestar assessoria técnica a entidades não governamentais.</p>
+ </div>
+<CustomVideo/>
+    </div>
+
+ <div id="partners" className="p-12 pt-24">
+ <h1>Nossos Parceiros</h1>
+ <div className="flex">
+ <Image
+ src={partner}
+  width={250}
+   height={250} 
+   alt=""
+   />
+
+</div>
+</div>
+       </main>
+
+      
     </div>
   );
 }

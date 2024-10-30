@@ -7,9 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        lg: "36rem",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        buttonColor: "#111D4A",
       },
     },
   },
