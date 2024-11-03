@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #FFF8;
+  --background: #FFF;
   --foreground: #171717;
   --color: #002c5b;
 }
@@ -22,104 +22,5 @@
 body {
   background: var(--background);
   color: var(--color);
-  font-family: "Open Sans", sans-serif;
-}
-
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
-img
-{
-  max-width: none;
-}
-
-.slider
-{
-  margin: 0 auto;
- width: 100%;
- overflow: hidden;
-}
-.slide
-{
-  transition: 1s;
-}
-.slides
-{
-display: flex;
-}
-.slides input
-{
-display: none;
-}
-.manual-navigation
-{
-position: absolute;
-width: 100%;
-margin-top: -40px;
-display: flex;
-justify-content: center;
-}
-.manual-btn
-{
-border: 2px solid #FFF;
-padding: 5px;
-border-radius: 50%;
-cursor: pointer;
-transition: 100ms;
-}
-.manual-btn:not(:last-child)
-{
-margin-right: 40px;
-}
-.manual-btn:hover
-{
-background: #fff
-}
-#radio1:checked ~ .first
-{
- margin-left: 0;
-}
-#radio2:checked ~ .first
-{
-  margin-left: -100%;
-}
-
-#radio3:checked ~ .first
-{
-  margin-left: -200%;
-}
-.navigation-auto div
-{
-padding: 7px;
-border-radius: 10px;
-cursor: pointer;
-transition: 100ms;
-}
-.navigation-auto
-{
-position: absolute;
-width: 100%;
-margin-top: 248px;
-display: flex;
-justify-content: center;
-}
-.navigation-auto div:not(:last-child)
-{
-margin-right: 40px;
-}
-#radio1:checked ~.navigation-auto .auto-btn1
-{
-background: #fff;
-}
-#radio2:checked ~.navigation-auto .auto-btn2
-{
-background: #fff;
-}
-#radio3:checked ~.navigation-auto .auto-btn3
-{
-background: #fff;
+  font-family: "Poppins", sans-serif;
 }
