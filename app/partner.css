@@ -1,0 +1,12 @@
+.logo img {
+    width: 7rem !important;
+}
+.swiper-slide img {
+    width: 10rem;}
+.swiper-free-mode>.swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+.container .swiper-slide
+{
+padding-right: 3rem;
+}

@@ -15,6 +15,15 @@ module.exports = {
         foreground: "var(--foreground)",
         buttonColor: "#111D4A",
       },
+      textColor: {
+        primaryColor: "#002C5B",
+      },
+      spacing: {
+        68: "15.5rem",
+      },
+      fontSize: {
+        md: "2rem",
+      },
     },
   },
   plugins: [],
