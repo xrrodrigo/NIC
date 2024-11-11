@@ -24,7 +24,7 @@ export default function Home() {
         <div className="flex items-center gap-14 justify-center">
           <Link href="#about">Quem somos</Link>
           <Link href="#projects">Projetos</Link>
-          <Link href="#partners">Parceiros</Link>
+          <Link href="#contact">Contatos</Link>
           <Link href="/dashboard">Transparência</Link>
           <Link href="/test">Notícias</Link>
         </div>

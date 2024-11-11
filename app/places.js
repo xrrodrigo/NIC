@@ -2,7 +2,7 @@ export default function places() {
     return (
         <div className="w-full text-white p-12 place flex background">
             <div className="flex flex-col justify-center h-full w-full">
-                <h1 className="font-bold pb-16 text-5xl	max-w-xl">Conheça nosso espaço</h1>
+                <h1 className="font-bold pb-16 text-5xl pt-8 max-w-xl">Conheça nosso espaço</h1>
                 <div className="flex justify-between">
                     <div className="h-full flex flex-col justify-center">
                         <h2 className="pb-12">Rua Quinquim do Mandú, 480 - Guanabara</h2>
