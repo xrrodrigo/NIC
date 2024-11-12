@@ -14,7 +14,7 @@ scroll-behavior: smooth;
   --secondaryColor: #001f3f;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
     --foreground: #ededed;
