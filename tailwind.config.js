@@ -10,6 +10,9 @@ module.exports = {
       width: {
         lg: "36rem",
       },
+      height: { 
+       card: "30rem",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

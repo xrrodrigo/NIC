@@ -3,25 +3,31 @@ import Link from 'next/link'
 
 import Coral from "/public/img/coral.jpg"
 
+import './globals.css';
+
+
 export default function projects() {
     
     return (
-        
-        <div className="flex">
-            <div className="absolute z-10 text-white pl-4">
-                
-                <div className="pb-11 pt-4 text-left">
-                <h1 className="font-extrabold text-3xl leading-9 pb-3">Coral<br/>Vozes de águia</h1>
-                <h2 className="font-light text-xs max-w-68">O projeto NIC reúne idosos para se apresentarem em escolas, palestras e praças de Contagem, espalhando alegria.</h2>
-                </div>
-                <Link href="#" className="bg-white text-xl text-primaryColor flex w-44 h-16 items-center justify-center rounded-xl">Saiba Mais</Link>
-            </div>
-
-            <Image
-                className="w-80 h-80 rounded-2xl brightness-50"
-                src={Coral}
-                alt="Coral Vozes de águia"
-            />
+        <div className="flex flex-col w-96 h-card border rounded-md">
+       <Image
+       src={Coral}
+       className="w-full max-h-48"
+       alt="Coral"
+       />
+       <div className="info-format">
+       <div className="flex flex-col text-left p-4">    
+       <div className="flex items-center text-left justify-between">
+        <h1 className="text-project-title font-medium">Vozes <br/>de águia</h1>
+        <h2 className="text-base font-medium detail-color">Quarta<br/> Sexta</h2>
+       </div>
+       <h2 className="text-unit thirt-color pt-3">NIC - Unidade Quinquim</h2>
+        </div>  
+        <div className="learn-more pl-4 pr-4 learn-more">
+            <h2 className="text-sm">Novo Progresso</h2>
+            <Link href="#" className="about rounded-md">Saiba-Mais</Link>
+       </div>
+        </div>
         </div>
 
     )

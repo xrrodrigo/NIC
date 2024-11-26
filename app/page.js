@@ -34,9 +34,9 @@ export default function Home() {
       </header>
 
       <main>
-        <Slider className="w-full h-80" />
 
         <section>
+        <Slider className="w-full h-80" />
           <div id="about" className="p-12 pt-36 flex justify-between">
             <div className="pr-12">
               <h1>Quem somos</h1>
@@ -45,9 +45,6 @@ export default function Home() {
             </div>
             <CustomVideo />
           </div>
-
-
-
           <div id="projects" className="p-12">
             <div className="flex justify-between">
               <h1 className="pb-3.5">Nossos Projetos</h1>

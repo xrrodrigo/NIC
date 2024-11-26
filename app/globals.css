@@ -12,15 +12,16 @@ scroll-behavior: smooth;
   --foreground: #171717;
   --color: #002c5b;
   --secondaryColor: #001f3f;
+  --thirtcolor: #2C45CC;
+  --detailcolor: #8798AD;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --background: #ffffff;
     --foreground: #ededed;
-    ;
+    
     --second-color: #8c9bab;
-    max-width: 15.5rem;
     font-size: 2rem;
   }
 }
@@ -37,6 +38,14 @@ background: var(--color);
 .secondary-color
 {
 background: var(--secondaryColor);
+}
+.thirt-color
+{
+ color: var(--thirtcolor);
+}
+.detail-color
+{
+ color: var(--detailcolor);
 }
 .slick-dots
 {
@@ -97,4 +106,38 @@ input
 .map
 {
 display: none;
+}
+.about
+{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 7rem;
+height: 2.5rem;
+font-size: 1rem;
+background: var(--thirtcolor);
+color: #FFF;
+}
+.learn-more
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-format
+{
+display: flex;
+height: 100%;
+flex-direction: column;
+justify-content: space-between;
+}
+.learn-more
+{
+border-top: 1px solid #001b36;
+padding: 1rem;
+}
+.text-unit
+{
+  font-size: .8rem;
+  line-height: 1.25rem;
 }
