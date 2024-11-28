@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       width: {
         lg: "36rem",
+        card: "21rem",
       },
       height: { 
        card: "30rem",

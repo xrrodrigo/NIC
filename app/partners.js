@@ -1,4 +1,5 @@
 'use client'
+import React, { useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
@@ -23,9 +24,11 @@ import toshiba from "/public/img/logo-toshiba.png"
 import { Autoplay, FreeMode } from 'swiper/modules';
 
 export default function App() {
+  const swiperRef = useRef(null); useEffect(() => { if (swiperRef.current) { swiperRef.current.swiper.el.style.pointerEvents = 'none'; } }, []);
   return (
 <div className='partner-slide'>
       <Swiper
+      ref={swiperRef}
        slidesPerView={5}
         freeMode={true}
         loop={true}
@@ -34,7 +37,6 @@ export default function App() {
           delay: 0,
           disableOnInteraction: false,
         }}
-        pagination={{ clickable: false }}
         modules={[Autoplay, FreeMode]}
         className="mySwiper"
       >

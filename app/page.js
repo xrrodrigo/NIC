@@ -6,6 +6,7 @@ import CustomVideo from './customvideo.js'
 import Partner from "./partners.js"
 import Projects from "./projectsSlides.js"
 import Slider from "./slider.js"
+import Goal from "./goal.js"
 import Places from "./places.js"
 
 import logo from "/public/img/logo.svg"
@@ -56,9 +57,9 @@ export default function Home() {
           </div>
           <div id="partners" className="p-12">
             <h1 className="pb-3.5">Nossos Parceiros</h1>
-            <Partner />
+            <Partner/>
           </div>
-          <Places/>
+          <Goal/>
         </section>
       </main>
 
