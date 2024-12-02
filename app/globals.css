@@ -16,13 +16,10 @@ scroll-behavior: smooth;
   --detailcolor: #8798AD;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
     --foreground: #ededed;
-    
-    --second-color: #8c9bab;
-    font-size: 2rem;
   }
 }
 
@@ -107,6 +104,7 @@ input
 {
 display: none;
 }
+
 .about
 {
 display: flex;

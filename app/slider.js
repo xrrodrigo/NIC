@@ -13,9 +13,9 @@ import './swiper.css';
 
 import Image from "next/image";
 
-import car1 from "/public/img/car1.png"
-import car2 from "/public/img/car2.png"
-import car3 from "/public/img/car3.png"
+import firstslide from "/public/img/grafite-projeto.png"
+import secondslide from "/public/img/car2.png"
+import thirtslide from "/public/img/car3.png"
 
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -37,9 +37,9 @@ export default function App() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><Image src={car1} alt="NIC" /></SwiperSlide>
-        <SwiperSlide><Image src={car2} alt="NIC" /></SwiperSlide>
-        <SwiperSlide><Image src={car3} alt="NIC" /></SwiperSlide>
+        <SwiperSlide><Image src={firstslide} alt="NIC" /></SwiperSlide>
+        <SwiperSlide><Image src={secondslide} alt="NIC" /></SwiperSlide>
+        <SwiperSlide><Image src={thirtslide} alt="NIC" /></SwiperSlide>
       </Swiper>
     </>
   );
