@@ -1,19 +1,10 @@
-import Image from "next/image";
-import PreEnem from "/public/img/preenem.jpg"
 import "./goal.css";
 
 export default function Goal() {
   return (
     <div className="p-12 flex">
-      <div>
-        <Image
-          className="w-card h-card object-cover rounded-lg"
-          src={PreEnem}
-          alt="Pre Enem"
-        />
-      </div>
       <div className="goal">
-        <h1 className="pl-24 font-extrabold text-5xl">Nossa Missão</h1>
+        <h1 className="font-extrabold text-5xl">Nossa Missão</h1>
 
         <div className="container pl-24">
           <div className="max-w-48">

@@ -1,19 +1,17 @@
-'use client'
-import React, { useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
+"use client";
+import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import Projects from "./projects.js";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/navigation";
 
-import './swiper.css';
+import "./swiper.css";
 
-import { Navigation } from 'swiper/modules';
+import { Navigation } from "swiper/modules";
 
-import { CaretRight, CaretLeft  } from "@phosphor-icons/react";
-
+import { CaretRight, CaretLeft } from "@phosphor-icons/react";
 
 export default function App() {
   const swiperRef = useRef(null);
@@ -30,8 +28,46 @@ export default function App() {
     }
   };
 
+  const projects = [
+    {
+      name: "Vozes de águia",
+      firstDay: "Quarta",
+      secondDay: "Sexta",
+      unity: "Quinquim do Mandú",
+      neighborhood: "Novo Progresso",
+    },
+    {
+      name: "Coral Juvenil",
+      firstDay: "Terça",
+      secondDay: "Quinta",
+      unity: "Centro Cultural",
+      neighborhood: "Bairro Central",
+    },
+    {
+      name: "Muay Thai",
+      firstDay: "Quarta",
+      secondDay: "Sexta",
+      unity: "Quinquim do Mandú",
+      neighborhood: "Novo Progresso",
+    },
+    {
+      name: "Futebol",
+      firstDay: "Terça",
+      secondDay: "Quinta",
+      unity: "Cruzeiro do Sul",
+      neighborhood: "Balneário do Ressaca",
+    },
+    {
+      name: "Pilates Solo",
+      firstDay: "Terça",
+      secondDay: "Quinta",
+      unity: "Bragança",
+      neighborhood: "Contagem",
+    },
+  ];
+
   return (
-    <div className='swiperBlackNext'>
+    <div className="swiperBlackNext">
       <Swiper
         ref={swiperRef} // Adiciona a referência aqui
         slidesPerView={4}
@@ -44,19 +80,25 @@ export default function App() {
         modules={[Navigation]}
         className="mySwiperProject"
       >
-        <SwiperSlide><Projects /></SwiperSlide>
-        <SwiperSlide><Projects /></SwiperSlide>
-        <SwiperSlide><Projects /></SwiperSlide>
-        <SwiperSlide><Projects /></SwiperSlide>
-        <SwiperSlide><Projects /></SwiperSlide>
-        <SwiperSlide><Projects /></SwiperSlide>
-        <SwiperSlide><Projects /></SwiperSlide>
-        <SwiperSlide><Projects /></SwiperSlide>
-        <SwiperSlide><Projects /></SwiperSlide>
+        {projects.map((projects, index) => (
+          <SwiperSlide key={index}>
+            <Projects
+              name={projects.name}
+              firstDay={projects.firstDay}
+              secondDay={projects.secondDay}
+              unity={projects.unity}
+              neighborhood={projects.neighborhood}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
-      <div className='pt-4'>
-      <button onClick={handlePrev}><CaretLeft color="#001f3f" size={26} /></button>
-      <button onClick={handleNext}><CaretRight color="#001f3f" size={26} /></button>
+      <div className="pt-4">
+        <button onClick={handlePrev}>
+          <CaretLeft color="#001f3f" size={26} />
+        </button>
+        <button onClick={handleNext}>
+          <CaretRight color="#001f3f" size={26} />
+        </button>
       </div>
     </div>
   );

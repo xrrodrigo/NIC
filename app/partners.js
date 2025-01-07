@@ -26,7 +26,7 @@ import { Autoplay, FreeMode } from 'swiper/modules';
 export default function App() {
   const swiperRef = useRef(null); useEffect(() => { if (swiperRef.current) { swiperRef.current.swiper.el.style.pointerEvents = 'none'; } }, []);
   return (
-<div className='partner-slide'>
+<div className='partner-slide px-12'>
       <Swiper
       ref={swiperRef}
        slidesPerView={5}
@@ -40,13 +40,13 @@ export default function App() {
         modules={[Autoplay, FreeMode]}
         className="mySwiper"
       >
-        <SwiperSlide><Image src={contagemLogo} className='logo' alt="NIC" /></SwiperSlide>
-        <SwiperSlide><Image src={MesaBrasil} className='logo' alt="NIC" /></SwiperSlide>
-        <SwiperSlide><Image src={tambasa} className='logo' alt="NIC" /></SwiperSlide>
-        <SwiperSlide><Image src={benassi} className='logo' alt="NIC" /></SwiperSlide>
-        <SwiperSlide><Image src={prodal} className='logo' alt="NIC" /></SwiperSlide>
-        <SwiperSlide><Image src={serparte} className='logo' alt="NIC" /></SwiperSlide>
-        <SwiperSlide><Image src={toshiba} className='logo' alt="NIC" /></SwiperSlide>
+        <SwiperSlide><Image src={contagemLogo} className='logo pr-24' alt="NIC" /></SwiperSlide>
+        <SwiperSlide><Image src={MesaBrasil} className='logo pr-24' alt="NIC" /></SwiperSlide>
+        <SwiperSlide><Image src={tambasa} className='logo pr-24' alt="NIC" /></SwiperSlide>
+        <SwiperSlide><Image src={benassi} className='logo pr-24' alt="NIC" /></SwiperSlide>
+        <SwiperSlide><Image src={prodal} className='logo pr-24' alt="NIC" /></SwiperSlide>
+        <SwiperSlide><Image src={serparte} className='logo pr-24' alt="NIC" /></SwiperSlide>
+        <SwiperSlide><Image src={toshiba} className='logo pr-24' alt="NIC" /></SwiperSlide>
       </Swiper>
       </div>
   );

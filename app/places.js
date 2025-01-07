@@ -23,7 +23,7 @@ export default function places() {
                 <div className="flex justify-between">
                     <div className="h-full flex flex-col justify-center">
                         <h2 className="pb-12">Rua Quinquim do Mandú, 480 - Guanabara</h2>
-                        <h2 className="pb-12">Rua Bragança, 197 - Novo Progresso</h2>
+                        <h2 className="pb-12">  </h2>
                         <h2 className="pb-12">Rua Cruzeiro do Sul, 775 - Novo Progresso</h2>
                     </div>
                     <div className="flex flex-col items-center">
