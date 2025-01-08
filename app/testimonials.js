@@ -15,7 +15,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 
 export default function Testimonials() {
     return (
-        <div  className="w-full flex flex-col items-center pt-12 px-12 teste">
+        <div  className="w-full flex flex-col items-center py-20 px-12 teste">
 
 <Swiper navigation={true} modules={[ Pagination, Navigation]}>
         <SwiperSlide>

@@ -14,6 +14,8 @@ import Testimonials from "./testimonials.js"
 
 import logo from "/public/img/logo.svg"
 import volunteer from "/public/img/volunteer.webp"
+import insta from "/public/img/instagram.svg"
+import face from "/public/img/facebook.svg"
 
 
 export default function Home() {
@@ -42,7 +44,7 @@ export default function Home() {
 
         <section>
         <Slider className="w-full h-80"/>
-          <div id="about" className="p-12 h-lg flex items-center justify-between">
+          <div id="about" className="px-12 pt-12 h-lg flex items-center justify-between">
             <div className="pr-12">
               <h1>Quem somos</h1>
               <h1 className="font-black text-5xl	max-w-xl py-3.5 2xl:text-7xl 2xl:max-w-4xl title">NIC - Núcleo de Incentivo à Cidadania</h1>
@@ -51,6 +53,13 @@ export default function Home() {
             <CustomVideo />
           </div>
           
+          <div id="partners" className="pb-16">
+            <div className="pl-12">
+            <h1 className="pb-3.5">Nossos Parceiros</h1>
+            </div>
+            <Partner/>
+          </div>
+
           <SocialAssistance/>
 
           <div id="projects" className="p-12 ">
@@ -79,41 +88,38 @@ export default function Home() {
 
 <News/>
 <Testimonials/>
-
-
-          <div id="partners">
-            <div className="pl-12">
-            <h1 className="pb-3.5">Nossos Parceiros</h1>
-            </div>
-            <Partner/>
-          </div>
-
         </section>
       </main>
     
-<footer className="w-full bg-buttonColor p-12 text-white">
-  <div className="flex items-center justify-between">
-<div className="flex flex-col text-left	">
+<footer className="w-full bg-buttonColor px-12 pt-12 pb-6 text-white">
+  <div className="flex items-center justify-between pb-20">
+<div className="flex flex-col text-left	gap-2.5">
 <h1 className="font-semibold opacity-100">Entre em contato em:</h1>
+<div className="flex flex-col">
 <h1 className="font-light opacity-65	">Telefone: (31) 90000-0000</h1>
 <h1 className="font-light opacity-65	">Email: contato@niccidadania.org.br</h1>
 <h1 className="font-light opacity-65	">Nossa Sede: Quinquin do mandú, 480</h1>
 </div>
+</div>
 
-<div className="flex flex-col text-left	">
+<div className="flex flex-col text-left	gap-2.5">
 <h1 className="font-semibold opacity-100">Projeto NIC</h1>
+<div className="flex flex-col">
 <h1 className="font-light opacity-65	">Sobre nós</h1>
 <h1 className="font-light opacity-65	">Projetos</h1>
 <h1 className="font-light opacity-65	">Linha do tempo</h1>
 <h1 className="font-light opacity-65	">Voluntaria-se</h1>
 </div>
+</div>
 
-<div className="flex flex-col text-left	">
+<div className="flex flex-col text-left	gap-2.5">
 <h1 className="font-semibold opacity-100">Projeto NIC</h1>
+<div className="flex flex-col">
 <h1 className="font-light opacity-65">Sobre nós</h1>
 <h1 className="font-light opacity-65">Projetos</h1>
 <h1 className="font-light opacity-65">Linha do tempo</h1>
-<h1 className="font-light opacity-65">Voluntaria-se</h1>
+<h1 className="font-light opacity-65">Voluntariar-se</h1>
+</div>
 </div>  
 
 
@@ -127,7 +133,7 @@ referrerPolicy="no-referrer-when-downgrade"
 
 
   </div>
-<div className="flex items-center justify-between"> 
+<div className="flex items-center justify-between pt-14 border-t border-white/15"> 
 <Image
 className="w-40"
 src={logo}
@@ -136,9 +142,18 @@ alt="Voluntários"
 
 <h1 className="font-normal text-sm">© 2024 ONG NIC Cidadania - Todos os direitos reservados.</h1>
 
-<div className="flex">
-<h1>Instagram</h1>
-<h1>Instagram</h1>
+<div className="flex gap-4">
+
+<Image
+className="w-6"
+src={insta}
+alt="Voluntários"
+/>
+  <Image
+  className="w-6	"
+src={face}
+alt="Voluntários"
+/>
 </div>
 </div>
 </footer>
